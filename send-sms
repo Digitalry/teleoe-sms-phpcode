@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Teleo SMS - PHP Sample Code</title>
+<title>Teleoe Bulk SMS - PHP Sample Code</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,7 +16,7 @@ $flashsms = $_POST['flashsms'];
 $number = $_POST['number'];
 $message = $_POST['message'];
 $route = $_POST['route'];
-$ch=curl_init('https://sms.teleosms.com/api/mt/SendSMS?APIKEY='.$user.'&senderid='.$senderid.'&channel='.
+$ch=curl_init('https://sms.teleoe.com/api/mt/SendSMS?APIKEY='.$user.'&senderid='.$senderid.'&channel='.
 $channel.'&DCS='.$DCS.'&flashsms='.$flashsms.'&number='.$number.'&text='.$message.'&route='.$route.
 '');
 $data = curl_exec($ch);
@@ -25,7 +25,7 @@ print($data); /* result of API call*/
 ?>
 <body>
 <div class="container">
-<h2>Teleo SMS - Send SMS Using APIKEY</h2>
+<h2>Teleoe Bulk SMS - Send SMS Using APIKEY</h2>
 <form method="post" action="">
 <div class="form-group">
 <label for="api">API:</label>
